@@ -19,6 +19,7 @@ let ranNum;
 document.addEventListener("DOMContentLoaded", generatePlayer2Choices);
 console.log("DOM fully loaded");
 
+//forEach loop which should make it possible to push the different buttons and change the handsign
 options.forEach((options) =>
   options.addEventListener("click", (e) => {
     player1Choice = e.target.class;
@@ -31,6 +32,7 @@ options.forEach((options) =>
   })
 );
 
+//The computer players "random" picking
 function generatePlayer2Choices() {
   console.log("the number stuff");
   if (ranNum == 1) {
@@ -44,6 +46,7 @@ function generatePlayer2Choices() {
   compareChoices();
 }
 
+//All the different outcomes of the game
 function compareChoices() {
   console.log("the different scores");
   //It's a tie
